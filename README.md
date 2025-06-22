@@ -32,7 +32,7 @@
 
 ```bash
 # 克隆项目
-git clone <repository-url>
+git clone https://github.com/[你的用户名]/vibe-code-docs.git
 cd vibe-code-docs
 
 # 安装依赖
@@ -63,6 +63,27 @@ pnpm run docs:build
 # 预览构建后的网站
 pnpm run docs:preview
 ```
+
+## 🚀 GitHub Pages 部署
+
+本项目已配置自动部署到 GitHub Pages：
+
+### 自动部署
+
+1. 推送代码到 `main` 分支
+2. GitHub Actions 会自动构建并部署到 GitHub Pages
+3. 网站将在 `https://[你的用户名].github.io/vibe-code-docs/` 可访问
+
+### 手动触发部署
+
+在 GitHub 仓库的 `Actions` 标签页，可以手动触发 "Deploy VitePress site to Pages" 工作流。
+
+### 配置 GitHub Pages
+
+1. 进入仓库设置页面
+2. 在左侧菜单找到 `Pages`
+3. 在 `Source` 部分选择 `GitHub Actions`
+4. 保存设置
 
 ## 📂 项目结构
 
