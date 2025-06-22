@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Vibe Coding',
   description: 'Harmonize Your Workflow',
+  base: '/vibe-code-docs/',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

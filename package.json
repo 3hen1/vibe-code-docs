@@ -1,15 +1,20 @@
 {
   "name": "vibe-code-docs",
   "version": "1.0.0",
-  "description": "",
+  "description": "基于 VitePress 构建的现代文档网站，支持中英双语，集成 AI 辅助开发功能",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shenyi@tp-link.com.hk/vibe-code-docs.git"
+  },
+  "homepage": "https://shenyi@tp-link.com.hk.github.io/vibe-code-docs/",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["vitepress", "documentation", "vue", "ai", "copilot", "mcp"],
+  "author": "shenyi@tp-link.com.hk",
   "license": "ISC",
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
