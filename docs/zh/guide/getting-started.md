@@ -30,7 +30,7 @@ pnpm install
 pnpm run docs:dev
 ```
 
-启动后，访问 [http://localhost:5173](http://localhost:5173) 即可预览文档。
+启动后，访问 `http://localhost:5173` 即可预览文档。
 
 ## 项目结构
 
