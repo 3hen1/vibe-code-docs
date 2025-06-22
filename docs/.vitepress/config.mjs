@@ -35,7 +35,20 @@ export default defineConfig({
           items: [
             { text: 'Introduction to Vibe Coding', link: '/en/foundation/introduction' },
             { text: 'IDE Setup', link: '/en/foundation/ide-setup' },
-            { text: 'AI Integration', link: '/en/foundation/ai-integration' }
+            { text: 'AI Integration', link: '/en/foundation/ai-integration' },
+            {
+              text: 'VSCode Integration',
+              collapsed: false,
+              items: [
+                { text: 'Why Choose VS Code (Insiders)', link: '/en/foundation/vscode-integration/why-vscode' },
+                { text: 'Installation and Core Plugins', link: '/en/foundation/vscode-integration/installation-and-plugins' },
+                { text: 'Frontend Web Project Setup', link: '/en/foundation/vscode-integration/frontend-web-setup' },
+                { text: 'Java Project Setup', link: '/en/foundation/vscode-integration/java-setup' },
+                { text: 'Go Project Setup', link: '/en/foundation/vscode-integration/go-setup' },
+                { text: 'Python Project Setup', link: '/en/foundation/vscode-integration/python-setup' },
+                { text: 'Vibe Coding MCP Setup', link: '/en/foundation/vscode-integration/mcp-setup' }
+              ]
+            }
           ]
         },
         {
@@ -98,7 +111,20 @@ export default defineConfig({
             items: [
               { text: 'Introduction to Vibe Coding', link: '/en/foundation/introduction' },
               { text: 'IDE Setup', link: '/en/foundation/ide-setup' },
-              { text: 'AI Integration', link: '/en/foundation/ai-integration' }
+              { text: 'AI Integration', link: '/en/foundation/ai-integration' },
+              {
+                text: 'VSCode Integration',
+                collapsed: false,
+                items: [
+                  { text: 'Why Choose VS Code (Insiders)', link: '/en/foundation/vscode-integration/why-vscode' },
+                  { text: 'Installation and Core Plugins', link: '/en/foundation/vscode-integration/installation-and-plugins' },
+                  { text: 'Frontend Web Project Setup', link: '/en/foundation/vscode-integration/frontend-web-setup' },
+                  { text: 'Java Project Setup', link: '/en/foundation/vscode-integration/java-setup' },
+                  { text: 'Go Project Setup', link: '/en/foundation/vscode-integration/go-setup' },
+                  { text: 'Python Project Setup', link: '/en/foundation/vscode-integration/python-setup' },
+                  { text: 'Vibe Coding MCP Setup', link: '/en/foundation/vscode-integration/mcp-setup' }
+                ]
+              }
             ]
           },
           {
@@ -149,6 +175,12 @@ export default defineConfig({
             text: '指南',
             items: [
               { text: '快速开始', link: '/zh/guide/getting-started' }
+            ]
+          },
+          {
+            text: '基础',
+            items: [
+              { text: 'VSCode 集成', link: '/zh/foundation/vscode-integration/'}
             ]
           }
         ]
