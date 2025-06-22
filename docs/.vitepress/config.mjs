@@ -38,6 +38,7 @@ export default defineConfig({
             { text: 'AI Integration', link: '/en/foundation/ai-integration' },
             {
               text: 'VSCode Integration',
+              link: '/en/foundation/vscode-integration/',
               collapsed: false,
               items: [
                 { text: 'Why Choose VS Code (Insiders)', link: '/en/foundation/vscode-integration/why-vscode' },
@@ -114,6 +115,7 @@ export default defineConfig({
               { text: 'AI Integration', link: '/en/foundation/ai-integration' },
               {
                 text: 'VSCode Integration',
+                link: '/en/foundation/vscode-integration/',
                 collapsed: false,
                 items: [
                   { text: 'Why Choose VS Code (Insiders)', link: '/en/foundation/vscode-integration/why-vscode' },
