@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      reveal.js:
+        specifier: ^5.2.1
+        version: 5.2.1
     devDependencies:
       vitepress:
         specifier: ^1.6.3
@@ -656,6 +660,10 @@ packages:
 
   regex@6.0.1:
     resolution: {integrity: sha512-uorlqlzAKjKQZ5P+kTJr3eeJGSVroLKoHmquUj4zHWuR+hEyNqlXsSKlYYF5F4NI6nl7tWCs0apKJ0lmfsXAPA==}
+
+  reveal.js@5.2.1:
+    resolution: {integrity: sha512-r7//6mIM5p34hFiDMvYfXgyjXqGRta+/psd9YtytsgRlrpRzFv4RbH76TXd2qD+7ZPZEbpBDhdRhJaFgfQ7zNQ==}
+    engines: {node: '>=18.0.0'}
 
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
@@ -1391,6 +1399,8 @@ snapshots:
   regex@6.0.1:
     dependencies:
       regex-utilities: 2.3.0
+
+  reveal.js@5.2.1: {}
 
   rfdc@1.4.1: {}
 

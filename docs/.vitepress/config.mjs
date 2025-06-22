@@ -10,7 +10,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'English Guide', link: '/en/' },
-      { text: 'Chinese Guide', link: '/zh/' }
+      { text: 'Chinese Guide', link: '/zh/' },
+      { text: 'Presentation', link: '/reveal-present' }
     ],
 
     sidebar: {
@@ -104,7 +105,8 @@ export default defineConfig({
           { text: 'Home', link: '/en/' },
           { text: 'Foundation', link: '/en/foundation/introduction' },
           { text: 'Lifecycle', link: '/en/lifecycle/project-scaffolding' },
-          { text: 'Advanced', link: '/en/advanced/tips-tricks' }
+          { text: 'Advanced', link: '/en/advanced/tips-tricks' },
+          { text: 'Presentation', link: '/reveal-present' }
         ],
         sidebar: [
           {
