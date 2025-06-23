@@ -10,3 +10,4 @@
 *   **Performance and Stability**: After years of development and iteration, VS Code performs excellently in terms of performance and stability.
 *   **Insiders Version**: Get early access to the latest features and stay on top of development trends.
 
+![why-vscode](/assets/images/vscode/why-vscode.jpeg)
