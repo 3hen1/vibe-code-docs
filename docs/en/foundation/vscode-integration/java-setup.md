@@ -2,10 +2,6 @@
 
 This guide provides a concise overview of setting up a Java development environment in Visual Studio Code. For a complete walkthrough, please refer to the official documentation on [Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial).
 
-You can also watch this introductory video:
-
-[![Getting Started with Java in VS Code](https://img.youtube.com/vi/_1nLS_k30p4/0.jpg)](https://www.youtube.com/watch?v=_1nLS_k30p4)
-
 ## Quick Setup
 
 The fastest way to get started with Java in VS Code.
@@ -71,7 +67,7 @@ Visualize relationships in your code:
 
 Here is a demonstration of the Call Hierarchy feature:
 
-<video src="https://code.visualstudio.com/assets/docs/java/java-editing/call-hierarchy.gif" controls title="Call Hierarchy"></video>
+<video src="https://code.visualstudio.com/assets/docs/java/java-editing/type-hierarchy.mp4" controls title="Call Hierarchy"></video>
 
 ### IntelliSense and Code Completion
 

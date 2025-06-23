@@ -5,6 +5,14 @@ export default defineConfig({
   description: 'Harmonize Your Workflow',
   base: '/vibe-code-docs/',
 
+  // 配置静态资源处理
+  assetsDir: 'assets',
+  
+  // 配置 Vite 选项
+  vite: {
+    assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg', '**/*.mp4', '**/*.webm', '**/*.ogg', '**/*.mp3', '**/*.wav', '**/*.flac', '**/*.aac']
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -45,7 +53,16 @@ export default defineConfig({
                 { text: 'Why Choose VS Code (Insiders)', link: '/en/foundation/vscode-integration/why-vscode' },
                 { text: 'Installation and Core Plugins', link: '/en/foundation/vscode-integration/installation-and-plugins' },
                 { text: 'Frontend Web Project Setup', link: '/en/foundation/vscode-integration/frontend-web-setup' },
-                { text: 'Java Project Setup', link: '/en/foundation/vscode-integration/java-setup' },
+                {
+                  text: 'Java Project Setup',
+                  link: '/en/foundation/vscode-integration/java-setup',
+                  collapsed: false,
+                  items: [
+                    { text: 'Quick Start Springboot3', link: '/en/foundation/vscode-integration/java-setup/quick-start-springboot3' },
+                    { text: 'Running Debug Springboot3', link: '/en/foundation/vscode-integration/java-setup/running-debug-springboot3' },
+                    { text: 'Unit Test Java', link: '/en/foundation/vscode-integration/java-setup/unit-test-java' }
+                  ]
+                },
                 { text: 'Go Project Setup', link: '/en/foundation/vscode-integration/go-setup' },
                 { text: 'Python Project Setup', link: '/en/foundation/vscode-integration/python-setup' },
                 { text: 'Vibe Coding MCP Setup', link: '/en/foundation/vscode-integration/mcp-setup' }
@@ -123,7 +140,16 @@ export default defineConfig({
                   { text: 'Why Choose VS Code (Insiders)', link: '/en/foundation/vscode-integration/why-vscode' },
                   { text: 'Installation and Core Plugins', link: '/en/foundation/vscode-integration/installation-and-plugins' },
                   { text: 'Frontend Web Project Setup', link: '/en/foundation/vscode-integration/frontend-web-setup' },
-                  { text: 'Java Project Setup', link: '/en/foundation/vscode-integration/java-setup' },
+                  {
+                    text: 'Java Project Setup',
+                    link: '/en/foundation/vscode-integration/java-setup',
+                    collapsed: false,
+                    items: [
+                      { text: 'Quick Start Springboot3', link: '/en/foundation/vscode-integration/java-setup/quick-start-springboot3' },
+                      { text: 'Running Debug Springboot3', link: '/en/foundation/vscode-integration/java-setup/running-debug-springboot3' },
+                      { text: 'Unit Test Java', link: '/en/foundation/vscode-integration/java-setup/unit-test-java' }
+                    ]
+                  },
                   { text: 'Go Project Setup', link: '/en/foundation/vscode-integration/go-setup' },
                   { text: 'Python Project Setup', link: '/en/foundation/vscode-integration/python-setup' },
                   { text: 'Vibe Coding MCP Setup', link: '/en/foundation/vscode-integration/mcp-setup' }

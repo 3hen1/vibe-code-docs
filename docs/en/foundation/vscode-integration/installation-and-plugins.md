@@ -6,5 +6,7 @@
 *   **Essential Core Plugins**:
     *   **GitHub Copilot**: AI programming assistant that greatly improves coding efficiency.
     *   **GitLens**: Enhanced Git capabilities.
-    *   **EditorConfig for VS Code**: Maintain consistent coding styles across teams.
-    *   **Prettier - Code formatter**: Code formatting tool.
+
+After downloading the installation package, we recommend that you select the following options:
+
+![install-options-choose](/assets/images/vscode/install-options-choose.png)
