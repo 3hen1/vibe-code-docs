@@ -1,0 +1,102 @@
+/**
+ * 自定义样式文件
+ * 包含图片放大和其他自定义样式
+ */
+
+/* 图片放大样式 */
+.main img:not(.no-zoom) {
+    cursor: zoom-in;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 16px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.main img:not(.no-zoom):hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* medium-zoom 自定义样式 */
+.medium-zoom-overlay {
+    z-index: 999;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.medium-zoom-image {
+    z-index: 1000;
+}
+
+.medium-zoom-image--opened {
+    cursor: zoom-out;
+}
+
+/* 深色主题适配 */
+.dark .main img:not(.no-zoom) {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark .main img:not(.no-zoom):hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 图片加载状态 */
+.main img[data-loading] {
+    opacity: 0.6;
+    filter: blur(1px);
+}
+
+/* 图片容器样式 */
+.main p img:not(.no-zoom) {
+    display: block;
+    margin: 16px auto;
+}
+
+/* 响应式图片 */
+@media (max-width: 768px) {
+    .main img:not(.no-zoom) {
+        margin: 12px 0;
+        border-radius: 6px;
+    }
+
+    .medium-zoom-overlay {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+}
+
+/* 图片说明文字样式 */
+.main p>img:not(.no-zoom)+em,
+.main p>img:not(.no-zoom)+br+em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: var(--vp-c-text-2);
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+/* 禁用放大的图片样式 */
+.main img.no-zoom {
+    cursor: default;
+}
+
+/* 图片加载动画 */
+@keyframes imageLoad {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.main img:not(.no-zoom) {
+    animation: imageLoad 0.3s ease-out;
+}
