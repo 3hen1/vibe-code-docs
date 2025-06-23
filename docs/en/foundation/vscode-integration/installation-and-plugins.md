@@ -9,4 +9,4 @@
 
 After downloading the installation package, we recommend that you select the following options:
 
-![install-options-choose](/assets/images/vscode/install-options-choose.png)
+![install-options-choose](./images/install-options-choose.png)
