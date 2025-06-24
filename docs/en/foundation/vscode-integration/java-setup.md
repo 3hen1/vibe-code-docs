@@ -6,16 +6,7 @@ This guide provides a concise overview of setting up a Java development environm
 
 The fastest way to get started with Java in VS Code.
 
-### 1. Install the Coding Pack for Java
-
-For a fresh setup on Windows or macOS, the [Coding Pack for Java](https://code.visualstudio.com/docs/java/java-tutorial#_coding-pack-for-java) is recommended. It includes VS Code, a Java Development Kit (JDK), and the essential Java extensions.
-
-*   [Install for Windows](https://aka.ms/vscode-java-installer-win)
-*   [Install for macOS](https://aka.ms/vscode-java-installer-mac)
-
-For other operating systems, you'll need to install a JDK, VS Code, and the Java extensions manually.
-
-### 2. Install the Extension Pack for Java
+### 1. Install the Extension Pack for Java
 
 If you already have VS Code installed, you can add Java support by installing the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack). This pack bundles the core extensions for Java development, including:
 
@@ -25,9 +16,63 @@ If you already have VS Code installed, you can add Java support by installing th
 *   Maven for Java
 *   Project Manager for Java
 
-### 3. Install a JDK
+### 2. Install a JDK
 
 You need a Java Development Kit (JDK) version 1.8 or newer. If you don't have one, you can download it from sources like [Amazon Corretto](https://aws.amazon.com/corretto), [Azul Zulu](https://www.azul.com/downloads/?package=jdk), or [Eclipse Adoptium's Temurin](https://adoptium.net/).
+
+More than 90% of our projects use JDK8 and Spring Boot 2.x, and the rest use JDK11. In order to upgrade Spring Boot 3.x, JDK must be 17 or above, and JDK21 is also a very good version, bringing features such as virtual threads. Therefore, it is recommended to install JDK8, JDK11, JDK17, and JDK21 locally, and use JDK8 by default
+
+If you want to download a new JDK, you can click the download link, or trigger the command Java: Install New JDK in Command Palette (⇧⌘P). It will open a new view guiding you to download JDKs.
+
+![download-jdk](https://code.visualstudio.com/assets/docs/java/java-project/download-jdk.png)
+
+### 3. Config Java Runtime 
+
+If you want to visualize the version of Java your current project is using in VSCode, you can:
+
+Open the Command Palette (Cmd+Shift+P) and search for "Java: Configure Java Runtime" to view the Java runtime environment information for the current project
+
+You can make sure that this project uses JDK21 by doing the following configuration in `.vscode/settings.json`
+
+```json
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/Users/yourname/.sdkman/candidates/java/8.0.332-zulu"
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/Users/yourname/.sdkman/candidates/java/11.0.12-zulu"
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "/Users/yourname/.sdkman/candidates/java/17.0.3.fx-zulu"
+        },
+        {
+            "name": "JavaSE-21",
+            "path": "/Users/yourname/.sdkman/candidates/java/21.0.1-graal"
+        }
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.detectJdksAtStart": false,
+    "java.jdt.ls.java.home": "/Users/yourname/.sdkman/candidates/java/21.0.1-graal"
+}
+```
+
+### 4. Config Maven
+
+Use the following command to confirm that the repository configuration for maven is correct
+
+```shell
+./mvnw help:effective-settings
+
+or
+
+mvn help:effective-settings
+
+```
+
 
 ## Development Workflow
 
